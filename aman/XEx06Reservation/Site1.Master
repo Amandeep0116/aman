@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="XEx06Reservation.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+         <header class="jumbotron">
+            <img src="Images/logo.png" alt="Royal Inns and Suites" />
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="cph_main" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cph_footer" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    </form>
+    </main>
+         <footer>
+            <p>&copy; <asp:Label ID="lblYear" runat="server"></asp:Label> 
+                Royal Inns and Suites</p>
+        </footer>
+</body>
+</html>
